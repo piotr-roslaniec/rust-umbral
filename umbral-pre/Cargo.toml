@@ -22,7 +22,8 @@ pyo3 = { version = "0.18", optional = true }
 js-sys = { version = "0.3.63", optional = true }
 wasm-bindgen = { version = "0.2.86", optional = true }
 derive_more = { version = "0.99", optional = true, default_features = false, features = ["as_ref", "from", "into"] }
-wasm-bindgen-derive = { version = "0.2.0", optional = true }
+# TODO: Replace with a new release after this issue is fixed: https://github.com/fjarri/wasm-bindgen-derive/issues/3
+wasm-bindgen-derive = { git = "https://github.com/piotr-roslaniec/wasm-bindgen-derive.git", rev = "d13475a9b36d6c6e5f2f99372d175f21b00bf0d6", optional = true }
 
 # These packages are among the dependencies of the packages above.
 # Their versions should be updated when the main packages above are updated.
